@@ -671,10 +671,10 @@ const handleClose = () => {
             <Grid item xs={4} >
             
                <Item className="item">
-               <div className="profile">
+               <div className="headdivv1">
                <img class="image" src={img1} alt="emp" width="" />
                {/* <em>Employess</em> */}
-               <div className="stuff">
+               <div className="menuuu">
                   <Link className="topic" to='/rq-paginated'>Employees</Link>
                   <p className="values">{value.employee}</p>
                   </div>
@@ -685,10 +685,10 @@ const handleClose = () => {
 
                <Grid item xs={4}>
                <Item >
-               <div className="profile">
+               <div className="headdivv">
                <img class="image2" src={img3} alt="emp" width="" />
                {/* <em>Employess</em> */}
-               <div className="stuff2">
+               <div className="menuuu">
                   <Link className="topic">Temporary</Link>
                   <h4 className="values">{value.temp}</h4>
                   </div>
@@ -698,11 +698,11 @@ const handleClose = () => {
 
                <Grid item xs={4} >
                <Item>
-               <div className="profile">
+               <div className="headdivv">
                <img class="image2" src={img2} alt="emp" width="" />
                
                {/* <em>Employess</em> */}
-               <div className="stuff2">
+               <div className="menuuu ">
                   <Link className="topic">Intern Emp</Link>
                   <h4 className="values">{value.intern}</h4>
                   </div>
