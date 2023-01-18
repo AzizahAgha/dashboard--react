@@ -235,6 +235,22 @@ font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans 
   border-radius: 67px;
   padding-top: 2px;
 }
+.menuuu{
+  display: flex;
+  flex-direction: column;
+  gap: 1px;
+  padding-top: 8px;
+}
+.headdivv{
+  display: flex;
+  gap: 13px;
+  padding: 7px;
+}
+.headdivv1{
+  display: flex;
+  gap: 13px;
+  padding: 1.5px;
+}
 
 /*------------------main---------------*/
 .dashboard{
@@ -356,11 +372,13 @@ font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans 
     /* right: 113px; */
     
 
-    width: 5%;
+    /* width: 5%;
     /* right: 113px; */
-    position: absolute;
-    padding-top: 10px;
-    
+    /* position: absolute;
+    padding-top: 10px; */
+
+    padding: 13px;
+    width: 89px;
 } 
 
 .image2{
@@ -370,10 +388,10 @@ font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans 
   width: 82%;
   left: 20px; */
 
-    width: 4.7%;
-    position: absolute;
-    padding: -6px;
-    padding-top: 10px;
+  padding: 8px;
+  width: 80px;
+   
+   
       
       /* position: relative;
       top: 27px;
