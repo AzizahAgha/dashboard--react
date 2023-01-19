@@ -93,7 +93,17 @@ input{
   min-height: 100vh;
   
 } 
-
+.hide{
+  text-align: left;
+  background-color: #fff;
+  /* padding-right: 100px;
+  padding-left: 30px;*/
+  width: 450px;
+  margin-right: 1px;
+  border-right: 0.5px solid rgb(230,227,227);
+  min-height: 100vh;
+  display: none;
+}
 .top{
  
   height: 50px;
