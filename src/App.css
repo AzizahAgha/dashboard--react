@@ -323,6 +323,10 @@ font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans 
 .down{
   padding-top: 8px;
   font-weight: 600;
+  cursor: pointer;
+}
+.black{
+  cursor: pointer;
 }
 .div{
   display: flex;
