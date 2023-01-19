@@ -16,9 +16,6 @@ import { StaticDatePicker } from '@mui/x-date-pickers/StaticDatePicker';
 import { DatePickerComponent } from '@syncfusion/ej2-react-calendars';
 import dayjs from 'dayjs';
 import {grey} from '@mui/material/colors';
-import img1 from './intern.png'
-import img2 from './images/internn.png'
-import img3 from './images/temp.png'
 import {DataGrid} from '@mui/x-data-grid'
 import DashboardIcon from '@mui/icons-material/Dashboard';
 import PersonOutlinedIcon from '@mui/icons-material/PersonOutlined';
@@ -40,6 +37,9 @@ import PersonAdd from '@mui/icons-material/PersonAdd';
 import Settings from '@mui/icons-material/Settings';
 import Logout from '@mui/icons-material/Logout';
 import ArrowDropDownIcon from '@mui/icons-material/ArrowDropDown';
+import img1 from './intern.png'
+import img2 from './images/internn.png'
+import img3 from './images/temp.png'
 import { Link } from "react-router-dom";
 
 
@@ -47,6 +47,7 @@ import { Link } from "react-router-dom";
 export default function ApexChart(){
 
   const [selected,setSelected]=useState(0);
+  const [show,setShow]=useState(false);
   const [val, setVal] = React.useState(dayjs('2023-01-17'));
   //------------------get api--------------------
   const [posts, setPosts]= useState([]);
@@ -452,7 +453,7 @@ const handleClose = () => {
     return(
         <div className="dashboard">
         
-        <div className="sidebar">
+        <div className={show?'hide':'sidebar'}>
           <div className="top">
           <IconButton
             size="large"
@@ -461,7 +462,7 @@ const handleClose = () => {
             aria-label="menu"
             sx={{ mr: 2 }}
           >
-            <MenuIcon />
+            <MenuIcon onClick={()=>setShow(true)}/>
           </IconButton>
             <span className="logoo">Lorem</span>
           </div>
@@ -554,7 +555,18 @@ const handleClose = () => {
             <div className="main">
 
             <div className="headdiv">
+            <div className="div">
+           {show?<IconButton
+            size="large"
+            edge="start"
+            color="inherit"
+            aria-label="menu"
+            sx={{ mr: 2 }}
+          >
+            <MenuIcon onClick={()=>setShow(false)}/>
+          </IconButton>:null}
             <h5 className="left">Dashboard</h5>
+            </div>
             <div className="div">
             <Link class="whatsnew" to='/list' >Whats New</Link>  
             <Avatar sx={{ bgcolor: grey[900] }} className="black" variant="square"> TN</Avatar>
@@ -609,15 +621,15 @@ const handleClose = () => {
           <Avatar /> Profile
         </MenuItem>
         <MenuItem>
-          <Avatar /> My account
+          <Avatar /> My Team
         </MenuItem>
         <Divider />
-        <MenuItem>
+        {/* <MenuItem>
           <ListItemIcon>
             <PersonAdd fontSize="small" />
           </ListItemIcon>
           Add another account
-        </MenuItem>
+        </MenuItem> */}
         <MenuItem>
           <ListItemIcon>
             <Settings fontSize="small" />
@@ -663,7 +675,7 @@ const handleClose = () => {
             </div>
 
 
-           <div className="middle-container">
+            <div className="middle-container">
             <Box sx={{  width: "100%",justifyContent:'center'}} >
             <Container maxWidth="md lg">
             <Grid container rowSpacing={6} columnSpacing={{ xs: 1, sm: 3, md: 3,lg:4 }} alignItems="center">
