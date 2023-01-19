@@ -663,12 +663,12 @@ const handleClose = () => {
             </div>
 
 
-            <div className="middle-container">
+           <div className="middle-container">
             <Box sx={{  width: "100%",justifyContent:'center'}} >
             <Container maxWidth="md lg">
             <Grid container rowSpacing={6} columnSpacing={{ xs: 1, sm: 3, md: 3,lg:4 }} alignItems="center">
             
-            <Grid item xs={4} >
+            <Grid item xs={12} sm={12} md={4} lg={4}>
             
                <Item className="item">
                <div className="headdivv1">
@@ -683,7 +683,7 @@ const handleClose = () => {
                </Item>
                </Grid>
 
-               <Grid item xs={4}>
+               <Grid item xs={12} sm={12} md={4} lg={4}>
                <Item >
                <div className="headdivv">
                <img class="image2" src={img3} alt="emp" width="" />
@@ -696,7 +696,7 @@ const handleClose = () => {
                </Item>
                </Grid>
 
-               <Grid item xs={4} >
+               <Grid item xs={12} sm={12} md={4} lg={4}>
                <Item>
                <div className="headdivv">
                <img class="image2" src={img2} alt="emp" width="" />
@@ -711,7 +711,7 @@ const handleClose = () => {
                </Grid>
 
                
-               <Grid item xs={6} justifyContent="center">
+               <Grid item xs={12} sm={12} md={6} lg={6} justifyContent="center">
                <div className="headdiv">
                <h4 className="head">Fundamental Analysis of Employee</h4>
                <Link className="head2">view</Link>
@@ -730,7 +730,7 @@ const handleClose = () => {
                </Item>
                </Grid>
 
-               <Grid item xs={6}>
+               <Grid item  xs={12} md={6} lg={6}>
                <div className="headdiv">
                <h4 className="head">Department</h4>
                <Link className="head2">view</Link>
@@ -744,7 +744,7 @@ const handleClose = () => {
                 series={pieOption.series}
                 type="pie"
                 width="100%"
-                height="260"
+                height="175%"
                />
                </Item>   
                </Grid>
@@ -758,7 +758,7 @@ const handleClose = () => {
 
            <div className="mid">
            <Grid container rowSpacing={7} columnSpacing={{ xs: 1, sm: 3, md: 5,lg:7 }} alignItems="center">
-           <Grid item xs={8}>
+           <Grid item xs={12} md={8} lg={8} >
            <Box sx={{ height: 290, width: '100%', '& .super-app-theme--header': {
           backgroundColor: '#F4D9E7',
         }, }}>
@@ -788,7 +788,7 @@ const handleClose = () => {
           </Box>
            </Grid>
 
-           <Grid item xs={4}>
+           <Grid item xs={12} md={4} lg={4}>
            <div className="headdiv">
                <h4 className="head">Age/Income</h4>
                <Link className="head2">view</Link>
